@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.squirreldev.bibliogo",
+      "sha256_cert_fingerprints": [
+        "9B:95:C8:75:22:10:B7:3F:8A:18:9C:95:65:A0:F4:A8:71:37:DE:41:12:D9:2F:B7:48:E4:F5:A6:27:B5:27:CD"
+      ]
+    }
+  }
+]
