@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BiblioGo · Page introuvable</title>
+<meta name="description" content="Cette page n'existe pas.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* Styles propres à la page 404 */
+  .notfound{
+    min-height:calc(100vh - 145px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 32px;
+  }
+  .notfound-num{
+    font-family:'Fraunces', serif;
+    font-weight:300;
+    font-size:clamp(72px, 14vw, 160px);
+    line-height:1;
+    letter-spacing:-0.02em;
+    margin-bottom:8px;
+  }
+  .notfound-num em{ font-style:italic; }
+  .notfound h1{
+    font-family:'Fraunces', serif;
+    font-weight:400;
+    font-size:clamp(22px, 3vw, 30px);
+    margin-bottom:14px;
+  }
+  .notfound p{
+    font-size:15.5px;
+    line-height:1.6;
+    color:var(--text-dim);
+    max-width:420px;
+    margin:0 auto 34px;
+  }
+  .notfound .btn-primary{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--amber);
+    color:#151008;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.07em;
+    text-transform:uppercase;
+    font-weight:500;
+    padding:15px 28px;
+    border-radius:3px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .notfound .btn-primary:hover{ background:#FFC15C; transform:translateY(-1px); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
+      BiblioGo
+    </a>
+    <a class="back-link" href="index.html">Retour à l'accueil</a>
+  </div>
+</header>
+
+<main class="notfound">
+  <div>
+    <p class="notfound-num">4<em>0</em>4</p>
+    <h1>Cette page n'est pas dans notre catalogue.</h1>
+    <p>La page que vous cherchez n'existe pas, ou a été déplacée.</p>
+    <a class="btn-primary" href="index.html">
+      Retour à l'accueil
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <a href="index.html" class="foot-brand">
+      <img class="brand-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
+      BiblioGo
+    </a>
+    <div class="foot-links">
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">CGU</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-faint);">© 2026 Squirrel Dev</p>
+  </div>
+</footer>
+
+</body>
+</html>
