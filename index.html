@@ -360,21 +360,11 @@
     align-items:center;
     justify-content:center;
   }
-  .device-placeholder{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-    color:var(--text-faint);
-    padding:20px;
-    text-align:center;
-  }
-  .device-placeholder svg{ width:36px; height:36px; opacity:0.5; }
-  .device-placeholder span{
-    font-family:'JetBrains Mono', monospace;
-    font-size:10.5px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
+  .device-screen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
   }
 
   /* ---------- MORE FEATURES (CARTES) ---------- */
@@ -652,10 +642,7 @@
         <div class="feature-visual">
           <div class="device-frame">
             <div class="device-screen">
-              <div class="device-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="7" width="18" height="12" rx="1.5"/><path d="M8 7 V5 a1 1 0 0 1 1-1 h6 a1 1 0 0 1 1 1 v2"/><circle cx="12" cy="13" r="3"/></svg>
-                <span>Capture · écran scan</span>
-              </div>
+              <img src="assets/screen-scan.png" alt="Capture d'écran de l'écran de scan ISBN dans BiblioGo">
             </div>
           </div>
         </div>
@@ -675,10 +662,7 @@
         <div class="feature-visual">
           <div class="device-frame">
             <div class="device-screen">
-              <div class="device-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20 V6 M20 20 V6 M4 13 H20 M4 8 H10 M14 16 H20"/></svg>
-                <span>Capture · écran étagères</span>
-              </div>
+              <img src="assets/screen-shelves.png" alt="Capture d'écran de l'écran des étagères dans BiblioGo">
             </div>
           </div>
         </div>
@@ -698,10 +682,7 @@
         <div class="feature-visual">
           <div class="device-frame">
             <div class="device-screen">
-              <div class="device-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21 C7 17 3 13.5 3 9.2 C3 6.3 5.3 4 8.2 4 C9.9 4 11.3 4.8 12 6.1 C12.7 4.8 14.1 4 15.8 4 C18.7 4 21 6.3 21 9.2 C21 13.5 17 17 12 21 Z"/></svg>
-                <span>Capture · écran souhaits</span>
-              </div>
+              <img src="assets/screen-wishlist.png" alt="Capture d'écran de la liste de souhaits dans BiblioGo">
             </div>
           </div>
         </div>
