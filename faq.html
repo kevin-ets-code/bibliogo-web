@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BiblioGo · Foire aux questions</title>
+<meta name="description" content="Questions fréquentes sur l'application BiblioGo.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/legal.css">
+<style>
+  /* Styles propres à la page FAQ : accordéons de question/réponse */
+  .faq-section{ margin-bottom:12px; }
+  .faq-section-title{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--amber);
+    margin:44px 0 4px;
+  }
+  .faq-section-title:first-of-type{ margin-top:0; }
+
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-q{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    padding:18px 2px;
+    cursor:pointer;
+    list-style:none;
+    font-size:15px;
+    font-weight:500;
+    color:var(--text);
+  }
+  .faq-q::-webkit-details-marker{ display:none; }
+  .faq-q::marker{ content:""; }
+  .faq-icon{
+    flex:none;
+    width:18px; height:18px;
+    color:var(--amber);
+    transition:transform .2s ease;
+  }
+  .faq-icon svg{ width:100%; height:100%; }
+  details[open] .faq-icon{ transform:rotate(45deg); }
+
+  .faq-a{
+    padding:0 2px 20px;
+    max-width:600px;
+  }
+  .faq-a p{
+    font-size:14.5px;
+    line-height:1.65;
+    color:var(--text-dim);
+    margin:0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
+      BiblioGo
+    </a>
+    <a class="back-link" href="index.html">Retour à l'accueil</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Foire aux questions</h1>
+    <p class="updated">Tout ce qu'il faut savoir pour bien démarrer</p>
+
+    <div class="faq-section">
+      <p class="faq-section-title">Mes livres</p>
+
+      <details class="faq-item">
+        <summary class="faq-q">Comment ajouter un livre à ma bibliothèque ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Appuyez sur le bouton + en bas de l'écran. Vous pouvez scanner le code-barres ISBN du livre, saisir l'ISBN manuellement, ou ajouter le livre manuellement en remplissant ses informations.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Quels statuts puis-je attribuer à un livre ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>BiblioGo propose cinq statuts : À lire, En cours de lecture, Lu, Abandonné et Possédé. Vous pouvez changer le statut à tout moment depuis la fiche du livre.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Comment noter un livre ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Ouvrez la fiche du livre et appuyez sur les étoiles de notation. Vous pouvez attribuer une note de 1 à 5 étoiles.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Puis-je modifier ou supprimer un livre ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Oui. Depuis la fiche du livre, appuyez sur le menu (trois points) pour accéder aux options de modification et de suppression.</p></div>
+      </details>
+    </div>
+
+    <div class="faq-section">
+      <p class="faq-section-title">Étagères et tags</p>
+
+      <details class="faq-item">
+        <summary class="faq-q">À quoi servent les étagères ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Les étagères vous permettent d'organiser vos livres en collections personnalisées (ex. : Vacances, À offrir, Mes classiques). Un livre peut appartenir à plusieurs étagères.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Quelle est la différence entre une étagère et un tag ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Les étagères sont des collections ordonnées et peuvent être rendues publiques. Les tags sont des étiquettes légères pour catégoriser rapidement vos livres (ex. : Thriller, Coup de cœur).</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Comment rendre une étagère publique ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Depuis le détail de l'étagère, appuyez sur le menu et activez l'option "Rendre publique". Vous obtiendrez un lien partageable unique.</p></div>
+      </details>
+    </div>
+
+    <div class="faq-section">
+      <p class="faq-section-title">Amis</p>
+
+      <details class="faq-item">
+        <summary class="faq-q">Comment ajouter un ami ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Rendez-vous dans l'onglet Amis et appuyez sur "Ajouter un ami". Entrez le code ami de votre contact, visible dans ses paramètres.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Que voit mon ami de ma bibliothèque ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Vos amis peuvent voir vos livres, vos étagères publiques, vos notes et vos statistiques de lecture. Vos étagères privées et vos notes personnelles restent invisibles.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Comment retirer un ami ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Depuis le profil de votre ami, appuyez sur le menu et sélectionnez "Retirer de mes amis". Cette action est réversible.</p></div>
+      </details>
+    </div>
+
+    <div class="faq-section">
+      <p class="faq-section-title">Compte et données</p>
+
+      <details class="faq-item">
+        <summary class="faq-q">Comment changer mon mot de passe ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Allez dans Paramètres puis Changer de mot de passe. Renseignez votre mot de passe actuel ainsi que le nouveau, puis confirmez.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Mes données sont-elles sauvegardées ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Oui, toutes vos données sont synchronisées en temps réel sur nos serveurs sécurisés. Vous pouvez retrouver votre bibliothèque sur n'importe quel appareil en vous connectant à votre compte.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Comment supprimer mon compte ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Pour supprimer votre compte et l'ensemble de vos données, contactez-nous à <a href="mailto:app.bibliogo@gmail.com">app.bibliogo@gmail.com</a>. Nous traiterons votre demande dans un délai de 30 jours.</p></div>
+      </details>
+    </div>
+
+    <div class="faq-section">
+      <p class="faq-section-title">Premium</p>
+
+      <details class="faq-item">
+        <summary class="faq-q">Qu'est-ce que BiblioGo Premium ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>BiblioGo Premium est une offre payante qui déverrouille des fonctionnalités avancées comme les statistiques détaillées, les étagères illimitées, et d'autres options à venir.</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">BiblioGo est-il gratuit ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5 V19 M5 12 H19"/></svg></span>
+        </summary>
+        <div class="faq-a"><p>Oui, BiblioGo est gratuit avec toutes les fonctionnalités essentielles. La version Premium propose des fonctionnalités supplémentaires en option.</p></div>
+      </details>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <a href="index.html" class="foot-brand">
+      <img class="brand-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
+      BiblioGo
+    </a>
+    <div class="foot-links">
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">CGU</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-faint);">© 2026 Squirrel Dev</p>
+  </div>
+</footer>
+
+</body>
+</html>
