@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BiblioGo · Votre bibliothèque, enfin rangée</title>
 <meta name="description" content="Scannez, classez et suivez votre bibliothèque personnelle. Étagères virtuelles, statistiques de lecture, partage entre amis.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -77,15 +80,10 @@
     letter-spacing:0.01em;
   }
   .brand-mark{
-    width:24px;height:24px;
-    border:1.4px solid var(--amber);
-    border-radius:5px;
-    position:relative; flex:none;
-  }
-  .brand-mark::after{
-    content:"";
-    position:absolute; left:6px; top:4px; bottom:4px;
-    width:1.4px; background:var(--amber);
+    width:24px; height:24px;
+    object-fit:contain;
+    flex:none;
+    display:block;
   }
   .nav-links{ display:flex; gap:38px; font-size:14px; color:var(--text-dim); }
   .nav-links a{ transition:color .15s ease; }
@@ -499,7 +497,7 @@
 <header>
   <div class="nav">
     <div class="brand">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <img class="brand-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
       BiblioGo
     </div>
     <nav class="nav-links">
@@ -784,7 +782,7 @@
 <footer>
   <div class="wrap foot-inner">
     <div class="foot-brand">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <img class="brand-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
       BiblioGo
     </div>
     <div class="foot-links">
