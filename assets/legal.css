@@ -1,0 +1,51 @@
+/* Surcharge de largeur : les pages juridiques utilisent une colonne
+   de lecture plus étroite que le reste du site (760px vs 1180px) */
+.wrap, .nav{ max-width:760px; }
+
+main{ padding:64px 0 100px; }
+
+h1{
+  font-family:'Fraunces', serif;
+  font-weight:300;
+  font-size:clamp(32px, 4.4vw, 48px);
+  margin-bottom:12px;
+}
+.updated{
+  font-family:'JetBrains Mono', monospace;
+  font-size:12.5px;
+  color:var(--text-faint);
+  margin-bottom:56px;
+}
+h2{
+  font-family:'Fraunces', serif;
+  font-weight:400;
+  font-size:24px;
+  margin:44px 0 16px;
+}
+h2:first-of-type{ margin-top:0; }
+p{
+  font-size:15.5px;
+  line-height:1.7;
+  color:var(--text-dim);
+  margin-bottom:14px;
+}
+ul{
+  margin:0 0 14px 0;
+  padding-left:20px;
+}
+li{
+  font-size:15.5px;
+  line-height:1.7;
+  color:var(--text-dim);
+  margin-bottom:6px;
+}
+strong{ color:var(--text); font-weight:600; }
+
+/* Liens de contenu (mailto, services tiers) : soulignés au survol,
+   contrairement aux liens de nav/footer du reste du site */
+main a{ color:var(--amber); text-decoration:none; }
+main a:hover{ text-decoration:underline; }
+
+@media (max-width: 480px){
+  main{ padding:48px 0 72px; }
+}
